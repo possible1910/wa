@@ -1,0 +1,109 @@
+.wa-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 430px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  font-family: system-ui, sans-serif;
+  position: relative;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.wa-header {
+  background: #075e54;
+  color: #fff;
+  padding: 18px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.wa-main {
+  flex: 1;
+  overflow-y: auto;
+  background: #fff;
+  padding-bottom: 70px; /* space for bottom bar */
+}
+
+.wa-bottom-tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  height: 58px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 430px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.wa-bottom-tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 6px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #657f6f;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.2s;
+  outline: none;
+}
+
+.wa-bottom-tabs button.active {
+  color: #25d366;
+}
+
+.wa-bottom-tabs span[role="img"] {
+  font-size: 22px;
+  margin-bottom: 1px;
+}
+
+/* Chats/Status/Calls Content Styles */
+.wa-chats .wa-chat,
+.wa-status .wa-status-item,
+.wa-calls .wa-call-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  border-bottom: 1px solid #ededed;
+}
+
+.wa-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.wa-chat-title,
+.wa-status-title,
+.wa-call-title {
+  font-weight: bold;
+}
+
+.wa-chat-snippet,
+.wa-call-snippet {
+  color: #757575;
+  font-size: 13px;
+}
+
+.wa-chat-time,
+.wa-status-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #25d366;
+}
+
+.wa-call-action {
+  margin-left: auto;
+  font-size: 22px;
+  color: #25d366;
+}
